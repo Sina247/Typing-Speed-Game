@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-900 text-white">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Typing Speed Game</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+	</head>
+	<body class="flex items-center justify-center min-h-screen px-4">
+		<div class="bg-gray-800 p-8 rounded-2xl shadow-2xl w-full max-w-2xl">
+			<h1 class="text-3xl font-bold text-center mb-6">⚡ Typing Speed Game</h1>
+
+			<div id="quote" class="bg-gray-700 text-xl p-4 rounded mb-4 font-mono text-yellow-300"></div>
+
+			<textarea id="input" class="w-full p-4 rounded bg-gray-700 text-white resize-none focus:outline-none focus:ring-2 focus:ring-yellow-400 transition duration-200" rows="4" placeholder="Start typing here..."></textarea>
+
+			<div class="flex justify-between items-center mt-6">
+				<span id="timer" class="text-lg font-semibold">⏱ 30s</span>
+
+				<span id="score" class="text-lg font-semibold">✅ Score : 0</span>
+			</div>
+
+			<button onclick="resetGame()" class="mt-6 w-full bg-yellow-500 text-gray-900 py-2 rounded-xl text-lg font-semibold hover:bg-yellow-400 transition">Play Again</button>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>
